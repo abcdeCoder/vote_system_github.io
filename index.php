@@ -10,7 +10,7 @@
 ?>
 <?php include 'includes/header.php'; ?>
 <Style>
-.Stylee {
+.a {
     background-color: black;
     color: white;
     position: absolute;
@@ -59,7 +59,7 @@
 
     <?php include 'includes/scripts.php' ?>
 </body>
-<div class="container Stylee">
+<div class="container a">
     <a href="https://www.linkedin.com/in/gaurav-verma-88056a224/">LinkdIn</a>
     <a href="https://abcdecoder.github.io/portfolio.github.io/">portfolio</a>
     <a href="https://github.com/abcdeCoder">github</a>
