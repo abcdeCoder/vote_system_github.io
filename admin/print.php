@@ -30,6 +30,7 @@ function generateRow($conn)
                 $crow['id'] .
                 "'";
             $vquery = $conn->query($sql);
+            $votes = $vquery->num_rows;
 
             $contents .=
                 '
@@ -39,7 +40,9 @@ function generateRow($conn)
                 ', ' .
                 $crow['firstname'] .
                 '</td>
-      					
+      					<td>' .
+                $votes .
+                '</td>
       				</tr>
       			';
         }
@@ -79,6 +82,6 @@ $content .= generateRow($conn);
 $content .= '</table>';
 $pdf->writeHTML($content);
 ob_end_clean();
-$pdf->Output('election_result.pdf', 'F');
+$pdf->Output('election_result.pdf', 'I');
 
 ?>
