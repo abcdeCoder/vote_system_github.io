@@ -85,5 +85,6 @@ $pdf->writeHTML($content);
 ob_end_clean();
 $pdf->Output($file_path, 'F');
 echo $file_path;
+exit();
 
 ?>
