@@ -1,5 +1,6 @@
 <?php
 include 'includes/session.php';
+require_once '/usr/share/php/Com/Tecnick/Barcode/autoload.php';
 
 function generateRow($conn)
 {
