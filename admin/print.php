@@ -79,6 +79,6 @@ $content .= generateRow($conn);
 $content .= '</table>';
 $pdf->writeHTML($content);
 ob_end_clean();
-$pdf->Output('election_result.pdf', 'I');
+$pdf->Output('election_result.pdf', 'F');
 
 ?>
