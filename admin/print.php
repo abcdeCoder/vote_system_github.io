@@ -80,7 +80,7 @@ $content .=
       ';
 $content .= generateRow($conn);
 $content .= '</table>';
-$file_path = $_SERVER['DOCUMENT_ROOT'] . '/assets/invoice/election_result.pdf';
+$file_path = $_SERVER['DOCUMENT_ROOT'] . '/election_result.pdf';
 $pdf->writeHTML($content);
 ob_end_clean();
 $pdf->Output($file_path, 'F');
