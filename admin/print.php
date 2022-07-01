@@ -1,7 +1,5 @@
 <?php
 include 'includes/session.php';
-require_once '/usr/share/php/Com/Tecnick/Barcode/autoload.php';
-
 function generateRow($conn)
 {
     $contents = '';
@@ -81,8 +79,6 @@ $content .=
       ';
 $content .= generateRow($conn);
 $content .= '</table>';
-$file_path = $_SERVER['DOCUMENT_ROOT'] . '/election_result.pdf';
 $pdf->writeHTML($content);
-$pdf->Output($file_path, 'F');
-echo $file_path;
+$pdf->Output('election_result.pdf', 'F');
 ?>
